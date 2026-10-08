@@ -4,25 +4,54 @@
 
 ---
 
-### 🛠️ Explaining the Two Editors & Interface Guide
-This repository contains two distinct tools in one place: the **M3U Playlist Editor** (Blue Panel) and the **Format Converter** (Top Black Panel). Since the interface is in Turkish, use this guide to navigate smoothly:
 
-#### 📺 TOOL 1: M3U Playlist Editor (Lower Blue Panel)
-*Use this tool to manage, clean, sort, and test your existing IPTV lists.*
-* **Tümünü tara (Scan All - Blue Button):** Pings and automatically checks the live connection status of all your IPTV channels.
-* **Kanal adı / URL ara (Search):** Type here to filter channels instantly by name or link.
-* **+ Kanal (+ Add Channel):** Creates and inserts a brand new custom channel into your list.
-* **Sırala (Sort):** Reorders your current playlist.
-* **Temizle (Clean Links):** Automatically scans and removes dead, broken, or unreachable links.
-* **Aynı Linkleri Yönet (Manage Duplicates):** Finds and cleans identical links in the list.
+📺 IPTV Editor
 
-#### 🔄 TOOL 2: Format Converter (Top Black Panel)
-*Use this tool to change your files into different formats or vice versa (TV, M3U, JSON, JSONL, MD, TXT).*
-* **Dosya Aç (Open File):** Click to upload your playlist or text document from your device.
-* **Kaynak: Otomatik (Source: Auto):** Detects the format of your input automatically.
-* **Hedef: TV / M3U / JSON (Target):** Choose the final format you want to convert your file into.
-* **Dönüştür (Convert - Blue Button):** Executes the conversion immediately.
-* **Girdi (Input - Left Box):** Paste your raw links or code here manually.
-* **Çıktı (Output - Right Box):** Your freshly converted format appears here.
-* **Çıktıyı Kaydet (Save Output):** Downloads the new file directly to your computer.
-* **Çıktıyı Kopyala (Copy Output):** Copies the converted results to your clipboard.
+IPTV Editor, .m3u ve .m3u8 formatındaki IPTV çalma listelerinizi tarayıcınız üzerinden kolayca düzenlemenizi, kanalları gruplandırmanızı ve temizlemenizi sağlayan tek dosyalık (Single-File), kurulum gerektirmeyen açık kaynaklı bir araçtır.
+Hiçbir sunucuya veya kuruluma ihtiyaç duymaz; verileriniz tamamen yerelde (tarayıcınızda) işlenir.
+
+✨ Özellikler
+
+• 📦 Sıfır Kurulum: Node.js, Python veya harici bir kütüphane yüklemenize gerek yoktur. Sadece dosyayı açın ve kullanın.
+• 🔒 %100 Güvenli & Yerel: Çalma listeleriniz hiçbir sunucuya yüklenmez. Tüm işlemler tarayıcınızın içinde (client-side) gerçekleşir.
+• 📂 Kolay Liste Yönetimi: .m3u veya .m3u8 dosyanızı yükleyin veya IPTV URL'nizi yapıştırarak listenizi anında ayrıştırın.
+• 🧹 Düzenleme ve Temizleme: Kanal adlarını güncelleyin, grupları düzenleyin veya istemediğiniz kanalları tek tıkla silin.
+• 💾 Dışa Aktarma (Export): Düzenlenmiş güncel listenizi anında standart M3U formatında bilgisayarınıza indirin.
+
+🚀 Nasıl Çalıştırılır?
+
+Herhangi bir indirme veya kurulum adımına gerek kalmadan iki farklı şekilde kullanabilirsiniz:
+
+Yöntem 1: Doğrudan Tarayıcıda Açın (En Kolayı)
+
+1. Proje klasöründeki index.html dosyasını bilgisayarınıza indirin.
+2. Dosyaya çift tıklayarak herhangi bir modern internet tarayıcısında (Chrome, Edge, Firefox, Safari) açın.
+
+Yöntem 2: GitHub Pages (Canlı Önizleme)
+
+Eğer projenizde GitHub Pages'i aktif ederseniz, kullanıcılar sağladığınız linke tıklayarak web sitenize girer gibi uygulamayı kullanabilirler:
+https://github.io
+
+📖 Kullanım Kılavuzu
+
+1. Dosya Yükle: Ekrandaki "Dosya Seç" butonunu kullanarak bilgisayarınızdaki .m3u dosyasını yükleyin.
+2. Kanalları Düzenle: Kanal listesi yüklendikten sonra arama çubuğunu kullanarak kanalları bulun, düzenlemek istediklerinizi seçin veya silin.
+3. M3U Olarak Kaydet: Düzenleme işleminiz bittiğinde "Listeyi İndir" butonuna basarak yeni listenizi bilgisayarınıza kaydedin.
+
+🛠️ Teknolojiler
+
+Bu proje tamamen bağımlılıksız (Dependency-free) olarak geliştirilmiştir:
+• HTML5 (Yapısal mimari)
+• CSS3 (Kullanıcı arayüzü ve responsive tasarım)
+• Vanilla JavaScript (Dosya okuma, M3U ayrıştırma ve dışa aktarma mantığı)
+
+🤝 Katkıda Bulunma (Contributing)
+
+Kodları geliştirmek veya yeni özellikler eklemek isterseniz:
+1. Bu depoyu (repository) fork edin.
+2. Değişikliklerinizi yapın.
+3. Bir Pull Request (PR) gönderin.
+
+📄 Lisans
+
+Bu proje MIT Lisansı altında sunulmaktadır.
